@@ -110,4 +110,5 @@ python study_record.py
 
 ## 補足
 
-本アプリは、まずCLI版として基本機能を実装し、その後Webアプリへ発展させることを前提に開発しています。
+* mainブランチはCLI版
+* Web版はfeature/flask-appで開発中
