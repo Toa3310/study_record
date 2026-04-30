@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Study Record Tool</title>
+</head>
+<body>
+    <h1>学習記録ツール</h1>
+
+    <form method="POST">
+        <select name="mode">
+            <option value="1">記録</option>
+            <option value="2">一覧表示</option>
+            <option value="3">平均学習時間表示</option>
+        </select><br>
+
+        <button type="submit">決定</button>
+    </form>
+
+    <p>選択されたモード: {{ mode }}</p>
+</body>
+</html>
