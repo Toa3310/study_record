@@ -1,0 +1,33 @@
+{% extends "base.html" %}
+
+{% block content %}
+<h1>記録ページ</h1>
+
+<form method="POST" action="/record" class="center">
+    <div class="form-area">
+        <label>日付</label>
+        <input type="date" name="date" required>
+    </div>
+
+    <div class="form-area">
+        <label>内容</label>
+        <input type="text" name="subject" required>
+    </div>
+
+    <div class="form-area">
+        <label>時間(単位: 分)</label>
+        <input type="number" name="time" step="1" min="0" required>
+    </div>
+
+    <div class="form-area">
+        <label>コメント</label>
+        <input type="text" name="comment">
+    </div>
+
+    <button type="submit">記録する</button>
+
+    <input type="reset" value="リセットする">
+</form>
+
+<p>{{ message }}</p>
+{% endblock %}

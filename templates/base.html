@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>学習記録アプリ</title>
+    <link rel="stylesheet" href="{{ url_for('static', filename='style.css') }}">
+</head>
+
+<body>
+
+    <nav class="nav">
+        <a href="/">トップ</a>
+        <a href="/record">記録する</a>
+        <a href="/records">一覧を見る</a>
+    </nav>
+
+    <hr>
+
+    {% block content %}
+    <!-- ここに各ページの中身が入る -->
+    {% endblock %}
+
+</body>
+</html>

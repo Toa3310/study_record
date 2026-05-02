@@ -1,0 +1,19 @@
+{% extends "base.html" %}
+
+{% block content %}
+<h1>記録一覧</h1>
+
+<p class="average">平均 {{ average }} 分, 合計 {{ total }} 分</p>
+
+<div class="container">
+    {% for record in records %}
+        <div class="card">
+            <p>日付: {{ record.date }}</p>
+            <p>内容: {{ record.subject }}</p>
+            <p>時間: {{ record.time }} 分</p>
+            <p>コメント: {{ record.comment }}</p>
+        </div>
+    {% endfor %}
+</div>
+
+{% endblock %}

@@ -1,21 +1,14 @@
-<!DOCTYPE html>
-<html>
-<head>
-    <title>Study Record Tool</title>
-</head>
-<body>
-    <h1>学習記録ツール</h1>
+{% extends "base.html" %}
 
-    <form method="POST">
-        <select name="mode">
-            <option value="1">記録</option>
-            <option value="2">一覧表示</option>
-            <option value="3">平均学習時間表示</option>
-        </select><br>
+{% block content %}
+<h1>学習記録アプリ</h1>
+<div class="center">
+    <p>学習内容を記録・管理するツールです</p>
 
-        <button type="submit">決定</button>
-    </form>
+    <p>「記録する」ページでは、日付、学習内容、学習時間、コメント(任意)を入力して記録します。</p>
 
-    <p>選択されたモード: {{ mode }}</p>
-</body>
-</html>
+    <p>「一覧を見る」ページでは、今までの各記録の内容の確認と、平均学習時間・合計勉強時間を確認をできます。</p>
+</div>
+
+
+{% endblock %}
